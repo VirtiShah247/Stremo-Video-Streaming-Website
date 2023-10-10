@@ -1,0 +1,11 @@
+.section2>a{
+    margin: 5vh 0vh;
+    color:white;
+    padding-left: 15%;
+    /* background-color: black; */
+    /* margin:10vh; */
+    /* background-color: black; */
+}
+div.section2.row{
+    margin-right:0px !important;
+}

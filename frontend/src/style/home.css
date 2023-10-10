@@ -1,0 +1,253 @@
+body, html{
+    height:auto;
+    padding:0;
+    margin:0;
+
+}
+.home{
+    background-color: var(--black);
+    color:white;
+    width:87.5rem;
+
+}
+.homeBgImg{
+    background: url("../images/bg-image.jpg") no-repeat center center;
+    height:100%;
+    background-size:cover;
+    padding: 48.5vh;
+    filter: brightness(30%);
+    /* opacity:0.8; */
+}
+nav{
+    bottom:105vh;
+}
+nav>div>div:nth-child(2)>.btn{
+    background-color: red;
+    color:white;
+}
+
+#stremoLogoHome{
+    height: 11rem;
+    width: 15rem;
+}
+
+.homeHr{
+    position:relative;
+    bottom:20.6vh;
+    border:4px solid grey;
+}
+#getStarted{
+    position: absolute;
+    bottom:25vh;
+    left:12.5%;
+    color: var(--white);
+   
+}
+#getStarted>h1{
+    font-size:5vh;
+    
+    
+}
+#getStarted>p{
+    margin-top: 20px;
+    margin-left:45vh;
+    font-size:4vh;
+
+}
+#getStarted>h5{
+    margin-left:25vh;
+    font-size:3vh;
+}
+#getStarted>form{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+}
+#getStarted>form>input[type=email]{
+    background: rgba(0,0,0,0.5);
+    height:8vh;
+    margin-top: 3vh;;
+    margin-left:35vh;
+    width:50vh;
+    color:white;
+}
+
+#getStarted>form>a{
+    height:8vh;
+    width:25vh;
+    margin-left:3vh;
+    font-size:x-large;
+    background-color: var(--red);
+}
+.section1{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:-6vh 0vh;
+    /* padding-bottom: -5vh; */
+    /* padding: 5vh 0px; */
+
+}
+
+.tv{
+    position: relative;
+    bottom:20vh;
+    width:55%;
+    /* font-family:sans-serif; */
+    /* height:25vh; */
+
+}
+.tv>h1{
+    font-size:2.5rem;
+}
+.tv>p{
+    font-size:2rem !important;
+
+}
+/* video::-webkit-media-controls-panel {
+    display: none !important;
+} */
+
+#tvVideo{
+    position: relative;
+    bottom:55.5vh;
+    left:12vh;
+    width:69%;
+}
+
+.mobile{
+    margin-bottom: 35vh;;
+}
+.mobileText{
+    margin-bottom: 35vh;
+}
+.mobileText>h1{
+    font-size: 2.5rem;
+}
+.mobileText>p{
+    font-size:2rem;
+}
+/* .mobile>img{
+    width:75%;
+    height:75%;
+} */
+.laptopText{
+    margin-bottom: 20rem;
+
+}
+.laptopText>h1{
+    font-size:2.5rem;
+}
+.laptopText>p{
+    font-size: 2rem;
+}
+
+/* .laptop>img{
+    position: relative;
+    bottom:28vh
+}
+#laptopVideo{
+    position: relative;
+    top:10vh;
+    left:15vh;
+    width:55vh;
+    height:35vh;
+
+} */
+.laptop>img{
+    position:relative;
+    bottom:18rem;
+    right:6rem;
+}
+#laptopVideo{
+    position:relative;
+    left:1.5rem;
+    width:57vh;
+    height:38vh;
+}
+#faq{
+    text-align:center; 
+    margin-top: -15vh;
+    /* bottom:5rem !important;  */
+}
+#faq>h1{
+    font-size:3rem;
+
+}
+.faqHr{
+    position:relative;
+    top:2px;
+    /* bottom:25vh; */
+    border:4px solid grey;
+}
+#accor{
+    width:50%;
+    margin-left:23rem !important;
+
+
+}
+
+.accordion-button{
+    background-color: rgb(75, 73, 73) !important;
+    color:white !important;
+    font-size:1.5rem !important;
+
+}
+
+.accordion-button:not(.collapsed):focus{
+    background-color: grey !important;
+    border: none !important;
+
+}
+.accordion-body{
+    background-color: rgb(75, 73, 73) !important;
+    color:white !important;
+    font-size:1.5rem !important;
+
+}
+/* .accordion-button::after{
+    background-image: url("../../../images/down-chevron.png") !important;
+
+} */
+.accordion-button::after{
+    background-image: url("../images/up-chevron.png") !important;
+}
+#faq>h5{
+    margin-top:5vh;
+    margin-right:1rem;
+    font-size:1.4rem;
+}
+#faq>form{
+    margin-bottom:8vh;
+    display: flex;
+    justify-content: center;
+}
+#faq>form>input[type=email]{
+    background: transparent;
+    height:8vh;
+    margin-top:3vh 0vh 5vh 0vh;
+    /* margin-left:2vh; */
+    width:50vh;
+    color:white;
+}
+#faq>form>a{
+    height:8vh;
+    width:25vh;
+    margin-left:3vh;
+    font-size:x-large;
+    background-color: var(--red);
+}
+
+.homeFooter>a{
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-top: 0.5%;
+    color: white !important;
+    padding-left: 15%;
+}
+/* 
+.homeFooter>a:nth-child(3){
+    padding-right: 0;
+} */
+
+

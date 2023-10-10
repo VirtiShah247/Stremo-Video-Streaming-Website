@@ -1,0 +1,53 @@
+#slider{
+    margin-top: 5vh;
+}
+#slider>h5{
+    font-size: 3.5vh;
+}
+#slider>div{
+    
+}
+
+#carouselDiv:hover{
+    cursor: pointer;
+}
+.carouselImages {
+    position: relative;
+    left: 1rem;
+    z-index: 1;
+}
+
+.carouselImages img {
+    width: 12rem;
+}
+
+.carouseImages>div {
+    display: flex;
+    align-content: center;
+}
+
+#hoverDiv {
+    position: absolute;
+    z-index: 9999;
+    transition: transform .2s;
+    top: 0;
+    left: 0;
+    /* Animation */
+}
+
+#hoverDiv>div {
+    /* position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%,-50%);
+    z-index: 99999; */
+    
+    transform: scale(1.5);
+
+    /* Increase the z-index value */
+}
+
+#hoverDivPlay>svg {
+    width: 50%;
+    height: 50%;
+}

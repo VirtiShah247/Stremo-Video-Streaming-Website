@@ -1,0 +1,105 @@
+.netflixNav {
+    position: fixed;
+    top: 0vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.144);
+    font-size: small;
+    height: 8vh;
+    width: 100%;
+
+}
+
+.netflixNav.navColorChange {
+    position: fixed;
+    top: 0vh;
+    z-index: 1;
+    background-color: black;
+    font-size: small;
+    height: 8vh;
+    width: 100%;
+    transition: 0.3s ease-in;
+
+}
+
+.netflixNav .container {
+    margin-left: 4.5rem;
+}
+
+.stremoLogo{ 
+    height: 7rem;
+    width: 7rem;
+}
+
+
+.dropDownImage {
+    height: 5vh;
+    border-radius: 15%;
+}
+
+.navSearchForm {
+    /* margin-right:10vh; */
+    height: 5vh;
+    margin-top: 1.5vh;
+}
+.navSearchForm input:focus{
+    box-shadow: none;
+}
+.navSearchForm button{
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+    height: 2.2rem;
+    width: 6rem;
+    font-size: 1rem;
+    box-shadow: 1px 1px black;
+}
+.navSearchForm button:hover{
+    background-color: red;
+    color: white;
+}
+.navSearchForm button:focus{
+    background-color: red;
+    color: white;
+}
+
+a.nav-link {
+    color: white;
+}
+
+div.dropdown-menu.show {
+    background: rgba(0, 0, 0, 0.38) !important;
+    position: absolute;
+    top: 3rem !important;
+    right: 0rem !important;
+}
+
+a.dropdown-item {
+    color: white !important;
+    font-size: small;
+}
+
+a.dropdown-item:hover {
+    text-decoration: underline !important;
+    background: none;
+}
+
+hr.dropdown-divider {
+    border: 1px solid grey;
+}
+
+div.nav-item.dropdown {
+    /* margin-right:13vh; */
+}
+
+#navbarSearchDropdown {
+    margin-right: -15vh;
+}
+#signOutBtn{
+    border: none;
+    color: white;
+    width: 100%;
+    background: none;
+}
+#signOutBtn:hover{
+    text-decoration: underline !important;
+}

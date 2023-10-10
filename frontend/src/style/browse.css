@@ -1,0 +1,63 @@
+#homePageTopBanner{
+    height: 48.5rem;
+}
+#homePageTopBannerImg{
+    position:relative;
+    bottom:35rem;
+    margin-left:5rem;
+}
+#homePageTopBanner img{
+    width: 87.5rem ;
+}
+
+#homePageTopBannerInfo{
+    
+    width:30rem;
+    font-size:3vh;
+    font-weight:400;
+} 
+#homePageTopBannerInfo img{
+    height: 13em;
+    width: 25em;
+}
+
+#homePageTopBannerInfo p {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: Netflix Sans,Helvetica Nueue,Helvetica,Arial,sans-serif;
+    text-shadow: #000000 0px 0px 3px;
+}
+#bannerPlay{
+    background-color: white;
+    color: var(--black);
+    font-size:large;
+    font-weight: 650;
+    width:15vh;
+}
+#bannerPlay>.row>.col-3{
+    position: relative;
+    bottom: 0.2rem;
+}
+
+#bannerMoreInfo .row{
+    background-color: rgba(128, 128, 128, 0.703);
+    color: white;
+    font-size:large;
+    font-weight: 500;
+    align-items:center;
+    position:relative;
+    left:5vh;
+    width:22vh;
+    height: 6vh;
+    border-radius: 1vh;
+}
+#bannerMoreInfo .row .col-9{
+    color: white;
+    text-decoration: none;   
+}
+#bannerMoreInfo .row .col-3{
+    position: relative;
+    bottom: 0.2rem;
+}
+
+

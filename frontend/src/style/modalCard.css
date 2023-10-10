@@ -1,0 +1,59 @@
+#modalCardDiv {
+    background-color: #2f2f2f;
+    /* height: 23rem; */
+    width: 35vh;
+    position: relative;
+    border-radius: 1vh;
+}
+
+#modalCardImgDiv>img {
+    border-radius: 1vh 1vh 0vh 0vh;
+    width: 14.9rem;
+}
+
+#modalCardDuration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* bottom: 19vh;
+    left: 23vh; */
+    font-size: 1.2rem;
+}
+
+#modalCardPlay>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalCardPlay>a>svg {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    color: white;
+}
+
+#modalCardInfo {
+    font-size: 2vh;
+    margin: 3vh;
+}
+
+#modalCardInfo>div {
+    margin-bottom: 3vh;
+}
+
+#modalCardTitle {
+    font-size: large;
+}
+
+#modalCardYear {
+    font-size: 3vh;
+}
+
+#modalCardDesc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

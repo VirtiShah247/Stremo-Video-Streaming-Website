@@ -1,0 +1,77 @@
+.netflixLogo {
+    position: absolute;
+    top: -4vh;
+    left: 16vh;
+}
+
+.signInForm {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 75%;
+    width: 28%;
+    position: absolute;
+    top: 6rem;
+    left: 35rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.3rem;
+}
+
+.signInForm>h3 {
+    margin-right: 9rem; 
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+
+}
+
+.signInForm>form input {
+    /* width:70%; */
+    color: white;
+}
+
+.signInForm>form [type=submit] {
+    background-color: red;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.signInForm>form .signInField {
+    background: grey;
+    color: white !important;
+    width: 70%;
+    margin: 0.5rem 0rem;
+}
+
+.css-1ff8729-MuiInputBase-root-MuiFilledInput-root,
+.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
+.MuiInputLabel-shrink {
+    color: black !important;
+}
+
+
+
+.newToNetflix {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 1rem;
+}
+
+.newToNetflix>a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.3rem;
+}
+
+.newToNetflix>a:hover {
+    text-decoration: underline;
+}
+
+.signInFooter>a {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: -4rem;
+    padding-top: 1%;
+    color: white;
+    padding-left: 15%;
+}

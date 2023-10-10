@@ -1,0 +1,107 @@
+.modal-content{
+    /* width: 150vh; */
+    /* align-content: center; */
+    background-color: #141414 !important;
+    color: white;
+
+}
+
+#modalCloseButton{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    background-color: #181818;
+    color: white;
+    font-size:larger;
+    width: 4.5vh;
+    height: 4.5vh;
+    border: 0px;
+    border-radius: 50%;
+    
+}
+#modalImage{
+    /* background-color: rgba(0, 0, 0, 0.904);; */
+}
+#modalImage>img{
+    /* position: relative; */
+    width: 100%;
+    height: 75vh;
+}
+
+/* a#modalBannerPlay.btn{
+    color: black;
+    background-color: white;
+    position: relative;
+    bottom: 8vh;
+    left: 3vh;
+    align-content: center;
+    width:15vh;
+    height: 6vh;
+    border-radius: 0.5vh;
+
+} */
+#modalBannerPlay{
+    width: 15vh;
+    color: black;
+    background-color: white;
+    position: relative;
+    bottom: 8vh;
+    left: 3vh;
+}
+
+#modalInfo{
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.904) !important; */
+    display: grid;
+    grid-template-columns: auto 30%;
+    font-size: 2vh;
+    margin: 0 4vh;
+    column-gap: 5vh;
+    margin-top:-2vh;
+}
+
+
+#modalInfoLeftTop{
+    margin-bottom: 3vh;
+}
+#yearDuration{
+    color: grey;
+    /* margin-left: 3vh; */
+}
+#year{
+    margin-right: 2vh;
+}
+#contentType{
+    font-size: 2vh;
+}
+
+#modalInfoRight>div:nth-child(1){
+    column-gap: 5vh;
+    margin-bottom: 3vh;
+
+}
+#moreLikeThis{
+    /* margin: 8vh 4vh; */
+    margin-top: 8vh;
+}
+
+
+#aboutModal{
+    margin: 0vh 4vh;
+}
+
+#aboutTitle{
+    color: grey;
+}
+
+#aboutDetails{
+    font-size: 2vh;
+}
+
+#cast>span:nth-child(2)>button{
+    color: white;
+    background-color: #141414;
+    border: none;
+    text-decoration: underline;
+}
+
