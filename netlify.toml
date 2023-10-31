@@ -4,6 +4,6 @@
 
 [[redirects]]
   # If you have any redirects or rewrites for your backend, define them here
-  from = "/api/v1/user/*"
-  to = "backend/api/v1/user/:splat"
+  from = "/*"
+  to = "frontend/public/index.html"
   status = 200
