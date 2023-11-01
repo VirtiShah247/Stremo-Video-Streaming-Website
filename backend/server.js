@@ -17,6 +17,9 @@ app.use(morgan('dev'))
 
 
 app.use('/api/v1/user',require('./userrouting'))
+app.get('/',(req,res)=>{
+    res.send("Hello from backend")
+})
 //listening port
 app.listen(port,()=>
 {
