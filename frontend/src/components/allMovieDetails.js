@@ -10,7 +10,6 @@ const AllMovieDetails = ({ movie, fetchMovieDetails }) => {
   const [credits, setCredits] = useState({});
   const [genresList, setGenresList] = useState([]);
   const [recommendedMovieIds, setRecommendedMovieIds] = useState([]);
-  const [allMoviesData, setAllMoviesData] = useState([]);
 
   const fetchVideoUrl = async (movieId) => {
     try {
@@ -38,7 +37,7 @@ const AllMovieDetails = ({ movie, fetchMovieDetails }) => {
         console.error('Error fetching movie details:', error);
       });
   }, [movie.id, apiKey]);
-
+  console.log(posterImage)
   // Fetch movie credits
   useEffect(() => {
     axios.get(`https://api.themoviedb.org/3/movie/${movie.id}/credits?api_key=${apiKey}`)

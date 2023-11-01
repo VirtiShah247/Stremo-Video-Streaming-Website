@@ -9,7 +9,6 @@ const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [allMovieDetails, setAllMovieDetails] = useState([]);
   const [moviesByGenre, setMoviesByGenre] = useState({});
-  const [count, setCount] = useState(0);
 
   // Function to fetch movie details and update state
   // const fetchMovieDetails = async (movieId) => {

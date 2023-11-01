@@ -3,29 +3,18 @@ import Carousel from 'react-multi-carousel/lib/Carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Line } from 'rc-progress';
 import InfoModal from './modal';
-import BadlaSmall from '../images/BadlaSmall.jpg';
-import { GrCirclePlay } from 'react-icons/gr';
 import '../style/slider.css';
-import { Link } from "react-router-dom";
 
 
 export default function Sliders({ movie }) {
     const [showModal, setShowModal] = useState(false);
-    const [changeDiv, setChangeDiv] = useState(false);
     const [clickedMovie, setClickedMovie] = useState();
     const imageLink = "https://image.tmdb.org/t/p/w500";
     // const [ changeDivSize, setChangeDivSize ] = useState({})
     const toggleModal = () => {
         setShowModal(!showModal)
     }
-    const handleMouseOverChange = () => {
-        setChangeDiv(true)
-        // setChangeDivSize({width:"60vh",height:"45vh",backgroundColor:'white'})
-    }
-    const handleMouseOutChange = () => {
-        setChangeDiv(false)
-        // setChangeDivSize({})
-    }
+  
 
     const responsive = {
         desktop: {

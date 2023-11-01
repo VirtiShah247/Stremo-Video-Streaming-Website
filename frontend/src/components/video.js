@@ -46,29 +46,30 @@ function Video() {
   }, [videoRef]);
 
 
-  const handleVideoContinue = async () => {
-    try {
-      const userId = JSON.parse(localStorage.getItem("Userdetail"))._id;
-      const res = await axios.post('/api/v1/user/continueVideo', { userId: userId });
-      const allContinueMovie = res.data.continueMovies;
-
-      // Filter the data and return it once the filtering is done
-      const continueMovie = allContinueMovie.filter((video) => {
-        return video.videoId === url;
-      });
-
-      console.log("continueMovie is ", continueMovie[0].currentTime);
-
-      return continueMovie;
-    } catch (error) {
-      // Handle errors from the API call
-      console.error("Error fetching continueMovie:", error);
-      return []; // Return an empty array or handle the error as needed
-    }
-  };
+  
 
 
   useEffect(() => {
+    const handleVideoContinue = async () => {
+      try {
+        const userId = JSON.parse(localStorage.getItem("Userdetail"))._id;
+        const res = await axios.post('/api/v1/user/continueVideo', { userId: userId });
+        const allContinueMovie = res.data.continueMovies;
+  
+        // Filter the data and return it once the filtering is done
+        const continueMovie = allContinueMovie.filter((video) => {
+          return video.videoId === url;
+        });
+  
+        console.log("continueMovie is ", continueMovie[0].currentTime);
+  
+        return continueMovie;
+      } catch (error) {
+        // Handle errors from the API call
+        console.error("Error fetching continueMovie:", error);
+        return []; // Return an empty array or handle the error as needed
+      }
+    };
     console.log('Running useEffect hook with dependencies:', url, videoLoading);
     if (url) {
       console.log('URL is defined:', url);

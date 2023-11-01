@@ -1,10 +1,9 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Modal, Button, Container } from 'react-bootstrap';
+import { Modal, Container } from 'react-bootstrap';
 import { FaPlay } from 'react-icons/fa';
 import ModalCard from './modalCard';
 import { MovieContext } from "./movieList";
-import axios from "axios";
 import '../style/modal.css';
 
 const InfoModal = ({ isOpen, toggle, movieInfo, searchMovieDetails, searchStatus }) => {
@@ -19,25 +18,6 @@ const InfoModal = ({ isOpen, toggle, movieInfo, searchMovieDetails, searchStatus
         console.log("videos is ", video);
         console.log("movieUrl is ", movieUrl);
         const imageLink = "https://image.tmdb.org/t/p/w500";
-
-        const downloadVideo = async () => {
-            try {
-                const response = await axios.post('/api/v1/user/download', { video: video }, { responseType: 'blob' });
-
-                const url = window.URL.createObjectURL(new Blob([response.data]));
-                const link = document.createElement('a');
-                link.href = url;
-                link.setAttribute('download', `${movieUrl}.mp4`); // replace with your filename
-                document.body.appendChild(link);
-                link.click();
-
-                // clean up and remove the link
-                document.body.removeChild(link);
-                window.URL.revokeObjectURL(url);
-            } catch (error) {
-                console.error('Download error:', error);
-            }
-        };
 
         const scrollToDiv = () => {
           if (targetDivRef.current) {

@@ -1,5 +1,4 @@
-import { Fragment, useContext } from "react";
-import NaamShabana from '../images/NaamShabana.jpg';
+import { Fragment } from "react";
 import { AiOutlinePlayCircle } from 'react-icons/ai';
 import '../style/modalCard.css';
 import { Link } from "react-router-dom";

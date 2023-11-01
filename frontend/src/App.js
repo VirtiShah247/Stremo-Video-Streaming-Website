@@ -9,11 +9,9 @@ import SearchList from './components/searchList';
 import Movie from "./components/movie";
 
 function App() {
-  const signedIn = localStorage.getItem("Signedin");
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path='/' element={signedIn ? <MovieList /> : <Home />}></Route> */}
         <Route path='/' element={<Home />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/signin' element={<Signin />}></Route>

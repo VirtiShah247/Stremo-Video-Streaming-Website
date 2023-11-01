@@ -1,10 +1,9 @@
 import { Fragment, useState, useEffect, useContext } from "react";
-import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from '../images/Stremo.png'
 import { BiHelpCircle } from "react-icons/bi";
 import { CiUser } from 'react-icons/ci';
 import { useNavigate } from 'react-router-dom';
-import { useSearchParams } from "react-router-dom";
 import { MovieContext } from "./movieList";
 import '../style/navbar.css'
 import axios from "axios";

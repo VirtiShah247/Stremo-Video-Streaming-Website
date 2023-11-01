@@ -1,9 +1,8 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 import { useLocation } from 'react-router-dom';
 import InfoModal from './modal';
 import '../style/searchList.css';
 import { Container } from "react-bootstrap";
-import NetflixNavbar from "./navbar";
 
 export default function SearchList() {
     const location = useLocation();
