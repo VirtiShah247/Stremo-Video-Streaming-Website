@@ -11,6 +11,8 @@ const AllMovieDetails = ({ movie, fetchMovieDetails }) => {
   const [genresList, setGenresList] = useState([]);
   const [recommendedMovieIds, setRecommendedMovieIds] = useState([]);
 
+  
+
   const fetchVideoUrl = async (movieId) => {
     try {
       const response = await axios.get(
@@ -100,11 +102,10 @@ const AllMovieDetails = ({ movie, fetchMovieDetails }) => {
       
       fetchMovieDetails(movie.id, movieData);
     }
-  }, [movieDetails, credits, genresList]);
+  }, [movieDetails, credits, genresList, fetchMovieDetails, movie.id, recommendedMovieIds, videoUrl]);
 
   return (
     <>
-
     </>
   );
 };
