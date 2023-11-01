@@ -1,9 +1,3 @@
 [build]
   command = "npm run dev"  # Specify the build command to start your development server
-  publish = "frontend/public"  # The directory containing the public files for the frontend
-
-[[redirects]]
-  # If you have any redirects or rewrites for your backend, define them here
-  from = "/*"
-  to = "frontend/public/index.html"
-  status = 200
+  publish = "frontend"  # The directory containing the public files for the frontend
