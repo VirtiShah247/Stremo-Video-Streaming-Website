@@ -1,6 +1,7 @@
 const userModel = require("./usermodel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+
 const loginControl = async (req, res) => {
   
   try {
