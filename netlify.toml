@@ -1,3 +1,0 @@
-[build]
-  command = "npm run dev"  # Specify the build command to start your development server
-  publish = "frontend"  # The directory containing the public files for the frontend
