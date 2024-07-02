@@ -6,7 +6,7 @@ const connectDB =require('./db')
 const app=express()
 dotenv.config()
 //port
-const port= process.env.PORT || 5050
+const port= process.env.NODE_PORT || 5050
 //config dotenv
 // dotenv.config()
 // MongoDb
@@ -23,5 +23,5 @@ app.get('/',(req,res)=>{
 //listening port
 app.listen(port,()=>
 {
-    console.log(`Server running ${process.env.NODE_ENV} on ${process.env.PORT}`)
+    console.log(`Server running ${process.env.NODE_ENV} on ${process.env.NODE_PORT}`)
 })
